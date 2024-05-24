@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="/recipe-finder.css" />
+  </head>
+  <body>
+    <div class="recipe-container">
+      <h1>Recipe Finder</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter ingredients or dish"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="recipe-cards">
+        <!-- Recipe cards will be dynamically inserted here -->
+      </div>
+      <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title">Recipe Title</h2>
+          <div id="modal-body">
+            <!-- Recipe details will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/recipe-finder.js"></script>
+  </body>
+</html>
